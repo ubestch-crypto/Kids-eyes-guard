@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#16a34a" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <rect width="100" height="100" rx="24" fill="url(#shieldGrad)" />
+  
+  <!-- Shield outline -->
+  <path d="M 50 18 C 65 18 78 24 78 38 C 78 62 50 82 50 82 C 50 82 22 62 22 38 C 22 24 35 18 50 18 Z" 
+        fill="#ffffff" 
+        filter="url(#shadow)" 
+        opacity="0.95"/>
+        
+  <!-- Inner Clock / Friendly Hourglass & Eye -->
+  <circle cx="50" cy="46" r="18" fill="#f0fdf4" stroke="#0d9488" stroke-width="2.5" />
+  
+  <!-- Clock hands at 10:10 -->
+  <line x1="50" y1="46" x2="41" y2="37" stroke="#0f766e" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="50" y1="46" x2="59" y2="39" stroke="#0f766e" stroke-width="2" stroke-linecap="round" />
+  <circle cx="50" cy="46" r="2.5" fill="#0d9488" />
+  
+  <!-- Gentle protective sparkles -->
+  <path d="M 50 69 L 52 73 L 56 74 L 52 76 L 50 80 L 48 76 L 44 74 L 48 73 Z" fill="#eab308" />
+</svg>
